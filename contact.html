@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>HVP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="himesha.html">Himesha</a></li>
+						<li><a href="vipul.html">Vipul</a></li>
+						<li><a href="poonam.html">Poonam</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Contact Us</h2>
+						<p>You will find how to reach us here.</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+
+					<header>
+						<h3>Our Address</h3>
+					</header>
+					<p>Czech University of Life Sciences Prague (CULS) <br>
+					Kamýcká 129<br>
+					165 00 Praha 6 - Suchdol<br>
+					Czech Republic<br>
+					Tel.: +420 224 381 111<br>
+					GPS coordinates: 50,129976, 14,373707</p>
+
+					<header>	
+						<h3>Our Map</h3>
+					</header>
+					<div id="map" style="width:714px;height:400px;"></div>					
+					<script>
+					function myMap() {
+						var mapOptions = {
+							center: new google.maps.LatLng(50.129976, 14.373707),
+							zoom: 15,
+							mapTypeId: google.maps.MapTypeId.HYBRID
+						}
+					var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+					}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>					
+
+					<!-- Form -->
+						<section>
+							<header>
+								<h3><br>Send us an Email</h3>
+							</header>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>					
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Czech University of Life Sciences 2017</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
