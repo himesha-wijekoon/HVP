@@ -73,7 +73,7 @@
 							<header>
 								<h3><br>Send us an Email</h3>
 							</header>
-							<form method="post" action="#">
+							<form id="contactForm" method="post" action="#" onsubmit="showMessage()">
 								<div class="row uniform 50%">
 									<div class="6u 12u$(xsmall)">
 										<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -87,12 +87,22 @@
 									<div class="12u$">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
+											<li><input type="reset" onclick="resetForm()" value="Reset" /></li>
 										</ul>
 									</div>
 								</div>
 							</form>
 						</section>
+
+						<script>
+						function resetForm() {
+						    document.getElementById("contactForm").reset();
+						}
+						function showMessage() {
+								document.getElementById("name");
+								alert("Hi " + document.getElementById("name").value + ", your message was sent successfully!");
+						}
+						</script>
 
 				</div>
 			</section>
