@@ -49,10 +49,10 @@
 					Tel.: +420 224 381 111<br>
 					GPS coordinates: 50,129976, 14,373707</p>
 
-					<header>	
+					<header>
 						<h3>Our Map</h3>
 					</header>
-					<div id="map" style="width:714px;height:400px;"></div>					
+					<div id="map" style="width:714px;height:400px;"></div>
 					<script>
 					function myMap() {
 						var mapOptions = {
@@ -63,7 +63,10 @@
 					var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 					}
 					</script>
-					<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>					
+
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYrZi_j2lpzNWSgP0lNBEBwblJyQBKCz8&callback=myMap"
+  type="text/javascript">
+					</script>
 
 					<!-- Form -->
 						<section>
@@ -89,8 +92,8 @@
 									</div>
 								</div>
 							</form>
-						</section>					
-					
+						</section>
+
 				</div>
 			</section>
 
